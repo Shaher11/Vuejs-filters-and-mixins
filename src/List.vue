@@ -12,8 +12,11 @@
 import {fruitMixin} from './fruitMixin';
 
 export default {
-    mixins:[fruitMixin]
+    mixins:[fruitMixin],
 
+    created() {
+        console.log('Insted List Created Hook');
+    }
 };
 </script>
 
